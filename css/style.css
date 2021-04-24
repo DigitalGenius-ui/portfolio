@@ -346,6 +346,7 @@ ul li{
 
 .send{
     color: #fff;
+    margin-left: 8%;
 }
 
 .container{
@@ -361,7 +362,7 @@ ul li{
 
 .name{
     padding: 10px;
-    width: 70%;
+    width: 100%;
     margin: 10px;
     border: none;
 }
@@ -371,7 +372,7 @@ ul li{
     margin-left: 10px;
     text-align: left;
     padding: 10px;
-    width: 75%;
+    width: 105%;
     margin: 10px;
     border: none;
 }
