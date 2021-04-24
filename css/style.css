@@ -326,9 +326,8 @@ ul li{
 .send{
     width: 500px;
     height: 350px;
-    margin-left: 18%;
+    margin-left: 13%;
     margin-top: 1%;
-    color: #fff;
 }
 
 .add img{
@@ -345,8 +344,10 @@ ul li{
     color: #fff;
 }
 
+
 .container{
     margin-left: 15%;
+    color: #fff;
 }
 
 .container h1{
