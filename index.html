@@ -24,17 +24,17 @@
                 </div>
                 <nav>
                     <a class="active" href="#">Home</a>
-                    <a href="#">Skills</a>
-                    <a href="#">Services</a>
-                    <a href="#">Portfolio</a>
-                    <a href="#">About</a>
-                    <a href="#">Contact Me</a>
+                    <a href="#skill">Skills</a>
+                    <a href="#services">Services</a>
+                    <a href="#port">Portfolio</a>
+                    <a href="#about">About</a>
+                    <a href="#contact">Contact Me</a>
                 </nav>
                 </div>
                 <div class="title">
-                    <img src="images/milad.png">
+                    <img src="../sample/images/milad.png">
                     <h3>I'm Milad Amiri</h3>
-                    <h1>A Front End Web<br> Developer..</h1>
+                    <h1>Front - End Web<br> Developer..</h1>
                     <a href="#">Download CV</a>
                 </div>
             </div>
@@ -42,21 +42,21 @@
         <main>
             <div class="back">
                 <div class="skills">
-                    <h4>- skills -</h4></div>
+                    <h4 id="skill">- skills -</h4></div>
                     <div class="programs">
-                        <img src="images/html.png">
-                        <img src="images/css.png">
-                        <img src="images/java.png">
+                        <img src="../sample/images/html.png">
+                        <img src="../sample/images/css.png">
+                        <img src="../sample/images/java.png">
                     </div>
                 </main>    
         <section>
             <div class="services">
-                <h4>- services -</h4>
+                <h4 id="services">- services -</h4>
             <div class="boxes">
                 <div class="box">
                     <h6>Web Development</h6>
                     <ul>
-                        <li>Single Pages</li>
+                        <li>Portfilo</li>
                         <li>E-Commerice</li>
                         <li>Blog</li>
                     </ul>
@@ -83,56 +83,73 @@
         <section>
             <div class="portfilo">
                 <div class="port">
-                    <h4>portfolio</h4>
+                    <h4 id="port">portfolio</h4>
                 </div>
                 <div class="boxess">
                 <div class="box1">
                     <h3>Project Title</h3>
-                    <img src="images/fitness.jpg">
+                    <img src="../sample/images/fitness.jpg">
                     <p>This is an ecomerice smaple wbsite.<br>
                     you can order me and recive<br> it back whiten 7 days.</p>
                 </div>
                 <div class="box1">
                     <h3>Project Title</h3>
-                    <img src="images/salat.jpg">
+                    <img src="../sample/images/salat.jpg">
                     <p>This is an ecomerice smaple wbsite.<br>
                         you can order me and recive<br> it back whiten 7 days.</p>
                 </div>
                 <div class="box1">
                     <h3>Project Title</h3>
-                    <img src="images/apple.jpg">
+                    <img src="../sample/images/apple.jpg">
                     <p>This is an ecomerice smaple wbsite.<br>
                         you can order me and recive<br> it back whiten 7 days.</p>
                 </div>
                 </div>
             </div>
             <div class="about">
-                <h3>- About -</h3>
-                    <div class="box2"></div>
+                <h3 id="about">- About -</h3>
+                    <div class="box2">
+                        <p>My name Milad Amiri. I am orignaly from <span>Afghanistan</span>. I have started my codding journy in early 2021 with <span>online courses</span>.<br>
+                        So far <span>I have completed</span> the 3th introductory courses of the Coursra Online Courses<span> on web development</span>. A part from coding I have<br>
+                        extra knowlege of <span>online businesses</span> that are high in demand these days.<br>
+                         </p>
+                    </div>
             </div>
             <div class="contact">
-                <h3>- contact -</h3>
-                <div class="box3">
-                    <div class="number">
+                <h3 id="contact">- contact -</h3>
+                <div class="all">
+                    <div class="add">
+                        <h4>+62 (856 1154 486)</h4>
                         <img src="images/call.png">
+                        <h4>milad marketing282@gmail.com</h4>
                         <img src="images/email.png">
-                        <img src="images/location.png">
-                        <div class="num">
-                            <h4>+62 (856 1154 486)</h4>
-                            </div>
-                            <div class="email">
-                                <h4>miladmarketing282@gmail.com</h4>
-                            </div>
-                            <div class="add">
-                                <h4>Jl. Perintis KM 7, Makassar, Indonesia</h4>
-                            </div>
-                        </div>
+                        <h4>Makassar, Indonesia </h4>
+                        <img src="sample/images/location.png">
                     </div>
+                <div class="send">
+                    <div class="container">
+                        <h1>Order Now</h1>
+                    <label for="fnam"> First Name :</label><br>
+                    <input class="name" type="text" placeholder="First Name"><br>
+                    <label for="lastname">Last Name  :</label><br>
+                    <input class="name" type="text" placeholder="Last Name"><br>
+                    <label for="email">Email Address :</label><br>
+                    <input class="name " type="email" placeholder="@support.com"><br>
+                    <label for="website">Choose Your Order :</label><br>
+                    <select class="check" id="website" name="website">
+                        <option value="e-commerec">E-Commerec</option>
+                        <option value="single page">Single Page</option>
+                        <option value="blog">Blog</option>
+                    </select><br>
+                    <button class="btn" type="submit">Submit</button>
+                    </div>
+                </div>
+                </div>
                 </div>
             </div>
         </section>
         <footer>
-            <p>&copy;Copyrigthed By Milad Amiri 2021</p>
+            <p>&copy; Copyrigthed By Milad Amiri 2021</p>
         </footer>
     </body>
 </html>
