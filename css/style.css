@@ -326,8 +326,9 @@ ul li{
 .send{
     width: 500px;
     height: 350px;
-    margin-left: 18%;
+    margin-left: 21%;
     margin-top: 1%;
+    color: #fff
 }
 
 .add img{
