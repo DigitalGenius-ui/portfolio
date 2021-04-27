@@ -344,6 +344,37 @@ ul li{
     color: #fff;
 }
 
+.social{
+    margin-left: 100px;
+}
+
+.social img{
+    float: left;
+    padding-top:30px;
+}
+
+.social .fb{
+    width: 30px;
+}
+.social .link{
+    width: 36px;
+}
+.social .pin{
+    width: 33px;
+}
+
+.link:hover{
+    transform: translateY(-10px);
+    cursor: pointer;
+}
+.fb:hover{
+    transform: translateY(-10px);
+    cursor: pointer;
+}
+.pin:hover{
+    transform: translateY(-10px);
+    cursor: pointer;
+}
 
 .container{
     color: #fff;
