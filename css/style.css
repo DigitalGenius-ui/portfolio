@@ -1,432 +1,372 @@
 *{
     margin: 0;
     padding: 0;
+    box-sizing: border-box;
 }
 
 body{
-    background-color:rgba(100, 100, 100, 0.082);
-}
-
-.banner{
-    width: 100%;
-    height: 100vh;
-    background: linear-gradient(45deg,rgb(14, 1, 70),rgba(14, 3, 117, 0.849));
-}
-
-.background{
-    width: 100%;
-    height: 70px;
-    background-color: #fff;
-    position: fixed;
-    z-index: 1;
-}
-
-.logo{
-    float: left;
-    color: rgb(0, 0, 0);
-    margin: 25px 10%;
-    position: absolute;
-    text-transform: uppercase;
-    z-index: 1;
-    cursor: pointer;
-}
-
-.logo span{
-    font-family: 'Bangers', cursive;
-    font-size: 30px;
-    transition: 1s;
-}
-
-nav{
-    float: right;
-    display: block;
-    margin: 25px 10%;
-    font-family: 'Oswald', sans-serif;
-}
-
-nav a{
-    color: rgb(0, 0, 0);
-    margin: 0 20px;
-    text-decoration: none;
-    text-transform: uppercase;
-    transition: 1s;
-}
-
-nav a:hover{
-    color: #b3b3b3;
-    transition: 500ms;
-}
-
-.active{
-    color: #b3b3b3;
-}
-
-nav a:active{
-    color: red;
-}
-
-.title{
-    padding-top: 23%;
-    padding-left: 15%;
+    background-color: #000;
     color: #fff;
-    font-size: 20px;
 }
 
-.title h3{
-    font-family: 'Kalam', cursive;
-    transition: 2s;
+:root{
+    --name :'Pattaya', sans-serif;
+    --tagline : 'Share', cursive;
+    --navigation:'Montserrat', sans-serif;
+    --border: 2px;
 }
 
-.title h1{
-    font-family: 'Pathway Gothic One', sans-serif;
-    font-size: 60px;
-    letter-spacing: 3px;
-    transition: 2s;
-}
-
-.title img{
-    width: 300px;
-    float: right;
-    position: absolute;
-    left: 60%;
-    bottom:0;
-    transition: 1s ease-in-out;
-}
-
-.title img:hover{
-    width: 320px;
-    transition: 1s ease-in-out;
-    cursor: pointer;
-}
-
-.title a{
-    position: absolute;
-    bottom: 15%;
-    padding: 10px 30px;
-    border: 1px solid #fff;
-    text-decoration: none;
-    color: #fff;
-    transition: 2s;
-}
-
-.title a:hover{
-    background-color: rgb(96, 96, 248);
-    transition: 1s;
-}
-
-.title a:active{
-    background-color: blue;
-}
-.back{
-    height: 550px;
-    font-size: 30px;
-    margin-top: 60px;
-    padding-top: 40px;
-    text-transform: uppercase;
-    font-family: 'Charmonman', cursive;
-}
-
-.skills{
-    text-align: center;
-}
-
-.skills h4{
-    transition: 1s ease-in;
-}
-
-.programs{
+.header{
+    width: 100%;
     display: flex;
-    margin-left: 18%;
 }
 
-.programs img{
-    width: 180px;
-    margin-top: 100px;
-    margin-left: 80px;
+.unlist{
+    width: 10%;
+    height: 100vh;
+    background-color: #9b9b9b49;
+    text-align: center;
+    position: fixed;
 }
 
-.services{
-    height: 500px;
+ul img{
+    width: 100%;
+    opacity: .4;
+}
+
+.navigation ul li{
+    list-style: none;
+}
+
+.icon {
+    padding: .8rem .8rem;
+    cursor: pointer;
+}
+.bar{
+    font-size: 1.9rem;
+    pointer-events: none;
+    display: inline-block;
+    width: 100%;
+}
+.icon:hover{
+    background-color: #000;
+    text-decoration: none;
+}
+
+a:hover{
+    text-decoration: none;
+    color: #fff;
+}
+
+li p{
+    font-size: 13px;
+    padding: .5rem 0;
+    font-family: var(--navigation);
+}
+
+.content-container, .about-container{
+    width: 75%;
+    margin: 0 17%;
+}
+
+.main-content{
+    text-align: center;
+    margin: 4% 0;
+}
+
+.main-content h1{
+    font-family: var(--name);
+    letter-spacing: 2px;
+}
+.main-content p{
+    font-family: var(--tagline);
+    font-size: 18px;
+    margin: 2rem 0;
+}
+
+.main-content img{
+    width: 70%;
+    max-width: 100%;
+    height: auto;
+    margin: 5rem 12rem;
+    opacity: .5;
+}
+
+.about-container h1{
+    font-size: 25px;
+    position: relative;
+}
+
+.line::before{
+    content: '';
+    position: absolute;
+    bottom: -1rem;
+    left: 0;
+    right: 0;
+    border: calc(var(--border) - 1px) solid #fff ;
+    width: 17%;
+}
+.about-container p{
+    text-align: justify;
+    margin: 2rem 0;
+}
+.progress{
+    height: 1.8rem;
+}
+
+.skill-container h2{
+    font-size: 18px;
+    padding-top: 1.5rem;
+    text-transform: uppercase;
+}
+
+.client-container{
+    margin: 2rem 0;
+    color: #000;
+}
+
+.client{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: rgb(185, 185, 185);
+    height: 20vh;
+}
+
+.project{
+    width: 100%;
     text-align: center;
 }
 
-.services h4{
-    margin-top: 3%;
-    text-transform: uppercase;
-    font-family: 'Charmonman', cursive;
-    font-size: 30px;
+.project h2{
+    font-size: 1.3rem;
+    width: 100%;
+}
+
+.project-container h1{
+    font-size: 25px;
+}
+
+.box-container{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    margin: 3rem 0;
 }
 
 .box{
-    width: 300px;
-    height: 250px;
-    box-shadow: 1px 5px rgb(144, 104, 255);
-    margin-top: 8%;
-    position: relative;
+    width: 310px;
+    height: 310px;
+    border: calc(var(--border) - 1px) solid #fff;
+    margin: .8rem;
+    border-radius: 10px;
 }
 
-.boxes .box{
-    display: inline-block;
-    margin-left: 2%;
-}
-
-.box h6{
-    position: absolute;
-    top: 10px; 
-    left: 25%;
-    font-size: 28px;
-    font-family: 'Pathway Gothic One', sans-serif;
-}
-
-.box ul{
-    position: absolute;
-    top: 30%;
-    left: 20%;
-    text-align: left;
-}
-
-ul li{
-    margin-top: 20px;
-    font-family: 'Pathway Gothic One', sans-serif;
-    font-weight: bold;
-    letter-spacing: 1px;
-    font-size: 25px;
-}
-
-.portfilo{
-    height: 900px;
-    text-align: center;
-}
-
-.portfilo h4{
-    text-align: center;
-    padding-top: 12%;
-    text-transform: uppercase;
-    font-family: 'Charmonman', cursive;
-    font-size: 30px;
-}
-
-.boxess{
-    text-align: center;
-    position: relative;
-}
-
-.box1{
-    width: 350px;
-    height: 350px;
-    border: 1px solid black;
-    display: inline-block;
-    margin-top: 10%;
-    margin-left: 20px;
-    position: relative;
-}
-
-.box1:hover{
-    cursor: pointer;
-    border: 4px solid #000;
-    opacity: .3;
-}
-
-.box1 h3{
-    position: absolute;
-    font-family: 'Pathway Gothic One', sans-serif;
-    letter-spacing: 2px;
-    background-color: rgb(255, 255, 255);
-    padding: 13px 25px;
-    box-shadow: 1px 1px black;
-    margin: -15px -10px;
-}
-
-.box1 img{
-    width: 350px;
-    height: 200px;
-    position: absolute;
-    left: 0;
-    right: 0;
-    z-index: -1;
-}
-
-.box1 p{
-    position: absolute;
-    bottom: 35px;
-    left: 45px;
-    font-size: 25px;
-    font-family: 'Pathway Gothic One', sans-serif;
-    font-weight: bold;
-}
-
-.about{
-    height: 500px;
-    text-align: center;
-}
-
-.about h3{
-    text-transform: uppercase;
-    font-family: 'Charmonman', cursive;
-    font-size: 30px;
-}
-
-.about .box2{
-    width: 1100px;
+.contact-container{
     height: 300px;
-    margin-left: 13%;
-    margin-top: 6%;
-    background-color: rgb(255, 251, 251);
-    border-radius: 0px 100px 0 100px ;
-    box-shadow: 8px 2px 20px rgba(0, 0, 0, 0.596);
 }
 
-.box2:hover{
-    box-shadow: 20px 3px 30px rgba(0, 0, 0, 0.596);
-    cursor: pointer;
+.contact-flex{
+    display: flex;
+    margin: 1.5rem 0;
 }
 
-.box2 p{
-    padding-top: 100px;
-    font-family: 'Pathway Gothic One', sans-serif;
-    font-weight: bold;
-    font-size: 25px;
+.icone .fas{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    font-size: 2rem;
+    margin: 1rem 0;
+    padding: 1rem 0;
 }
 
-.box2 span{
-    color: darkblue;
+.contact h2{
+    margin: 1.6rem;
+    font-size: 17px;
+    padding: 1rem 0;
+    opacity: .7;
 }
 
-.contact{
-    margin-top: 10%;
-    height: 600px;
-    background: linear-gradient(45deg,rgb(14, 1, 70),rgba(14, 3, 117, 0.849));
+.registration{
+    height: 400px;
+    margin-top: 2rem;
+    pointer-events: all;
 }
 
-.contact h3{
-    color: #fff;
-    text-transform: uppercase;
-    font-family: 'Charmonman', cursive;
-    font-size: 30px;
-    padding-top: 2%;
+.registration input{
+    width: 100%;
+    height: 3.5rem;
+    margin-bottom: 1rem;
+}
+
+.registration button{
+    padding: 13px 20px;
+    margin-bottom: 1rem;
+    background-color: #fff;
+    border: none;
+    outline: none;
+}
+
+button:hover{
+    opacity: .5;
+}
+
+.fa-bars{
+    color: black;
+}
+
+.social-icon{
+    width: 100%;
+    height: 200px;
     text-align: center;
 }
 
-.all{
-    display: flex;
-    margin-top: 2%;
-    margin-left: 3%;
-    font-family: 'Pathway Gothic One', sans-serif;
-    font-size: 17px;
-}
-
-.add{
-    width: 500px;
-    height: 350px;
-    position: relative;
-    margin-left: 2% ;
-    margin-top: 8%;
-}
-
-.send{
-    width: 500px;
-    height: 350px;
-    margin-left: 10%;
-    margin-top: 1%;
-}
-
-.add img{
-    width: 30px;
-    display: block;
-    margin-top: 45px;
-    margin-left: 12px;
-}
-
-.add h4{
-    position: absolute;
-    left: 20%;
-    margin-top: 55px;
-    color: #fff;
-}
-
-.social{
-    margin-left: 100px;
-}
-
-.social img{
-    float: left;
-    padding-top:30px;
-}
-
-.social .fb{
-    width: 30px;
-}
-.social .link{
-    width: 36px;
-}
-.social .pin{
-    width: 33px;
-}
-
-.link:hover{
-    transform: translateY(-10px);
-    cursor: pointer;
-}
-.fb:hover{
-    transform: translateY(-10px);
-    cursor: pointer;
-}
-.pin:hover{
-    transform: translateY(-10px);
-    cursor: pointer;
-}
-
-.container{
-    color: #fff;
-}
-
-.container h1{
-    margin: 15px;
-    margin-left: 20%;
-    text-transform: uppercase;
-    font-size: 35px;
-}
-
-.name{
-    padding: 10px;
-    width: 95%;
-    margin: 10px;
-    border: none;
-}
-
-.check{
-    margin-top: 12px;
-    margin-left: 10px;
-    text-align: left;
-    padding: 10px;
-    width: 99%;
-    margin: 10px;
-    border: none;
-}
-
-.btn{
-    margin-top: 25px;
-    margin-left: 26%;
-    padding: 7px 40px;
-    background-color:transparent;
-    border: 2px solid #fff;
-    color: #fff;
-    cursor: pointer;
-}
-
-.btn:hover{
-    background-color: rgba(58, 102, 248, 0.685);
-    transition: 1s ease-in-out;
-}
-
-.btn:focus{
-    background-color: cornflowerblue;
-    color:#000;
+.social-icon .fab{
+    font-size: 3rem;
+    padding: 5rem 1rem;
 }
 
 footer{
-    padding: 20px;
-    background:linear-gradient(45deg,rgb(14, 1, 70),rgba(14, 3, 117, 0.849));
-    color: #fff;
     text-align: center;
+    padding: 5px;
+}
+
+@media screen and (max-width: 768px) {
+
+    .unlist{
+        width: 100%;
+        height: 100vh;
+        background-color: rgb(66, 66, 66);
+        z-index: 1000;
+        clip-path: circle(100px at 90% -15%);
+        -webkit-clip-path: circle(100px at 90% -15%);
+        transition: All 1s ease-in-out;
+    }
+
+    .unlist li:nth-child(1){
+        margin-top: 15%;
+    }
+
+    .unlist li{
+        margin-right: 30%;
+        margin-bottom: 3%;
+    }
+    .style{
+        clip-path: circle(1500px at 90% -17%);
+        -webkit-clip-path:circle(1500px at 90% -17%);
+        transition: All 1s ease-in-out;
+        overflow: hidden;
+    }
+    .icon:hover{
+        background-color: transparent;
+        opacity: .5;
+        text-decoration: none;
+    }
+    
+    a:hover{
+        text-decoration: none;
+    }
+    .navigation img{
+        display: none;
+    }
+
+    .bar{
+        font-size: 4rem;
+    }
+
+    .icon p{
+        font-size: 1.5rem;
+    }
+
+    .content-container{
+        margin-top: 5rem;
+    }
+
+    .fa-bars{
+        position: absolute;
+        right: 5rem;
+        top: 2rem;
+        font-size: 3rem;
+        cursor: pointer;
+        z-index: 1000;
+        color: #fff;
+    }
+
+    .main-content img{
+        width: 70rem;
+        margin-left: 5%;
+    }
+
+    .content-container, .about-container{
+        margin-left: 10%;
+    }
+
+    .line{
+        width: 160%;
+    }
+
+    .box{
+        width: 250px;
+        height: 250px;
+    }
+
+    .social-icon .fab{
+        font-size: 3rem;
+    }
+}
+
+@media screen and (max-width : 360px) {
+
+    .fa-bars{
+        right: 20px;
+    }
+
+    .content-container{
+        margin-top: 35%;
+    }
+
+    .line{
+        width: 320%;
+    }
+
+    .client-container p{
+        margin-left: -7rem;
+    }
+
+    .client{
+        text-align: center;
+        flex-direction: column;
+        height: 400px;
+    }
+
+    .project{
+        padding: 2rem;
+    }
+
+    .project h2{
+        font-size: 1rem;
+    }
+
+    .registration input{
+        width: 100%;
+        height: 2.6rem;
+    }
+
+    .registration button{
+        padding: 10px 18px;
+    }
+
+    .social-icon .fab{
+        font-size: 2rem;
+        padding: 0 3px;
+    }
+
+    .social-icon{
+        height: 80px;
+    }
+
+    footer span{
+        font-size: 10px;
+    }
 }
