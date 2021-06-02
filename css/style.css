@@ -65,7 +65,6 @@ li p{
 }
 
 .content-container, .about-container{
-    width: 75%;
     margin: 0 17%;
 }
 
@@ -253,8 +252,8 @@ footer{
         margin-bottom: 3%;
     }
     .style{
-        clip-path: circle(1500px at 90% -17%);
-        -webkit-clip-path:circle(1500px at 90% -17%);
+        clip-path: circle(1600px at 90% -17%);
+        -webkit-clip-path:circle(1600px at 90% -17%);
         transition: All 1s ease-in-out;
         overflow: hidden;
     }
@@ -294,12 +293,19 @@ footer{
     }
 
     .main-content img{
-        width: 70rem;
-        margin-left: 5%;
+        margin-left: 4rem;
+        width: 80%;
     }
 
-    .content-container, .about-container{
-        margin-left: 10%;
+    .main-content{
+        height: 1000px;
+        position: sticky;
+    }
+
+    .about-container{
+        margin-left: 5%;
+        margin-right: 5%;
+        background-color: #000;
     }
 
     .line{
@@ -316,14 +322,29 @@ footer{
     }
 }
 
-@media screen and (max-width : 360px) {
+@media screen and (max-width : 480px) {
 
     .fa-bars{
         right: 20px;
     }
+    .main-content{
+        height: 600px;
+    }
+
+    .main-content h1{
+        width: 70%;
+        margin-left: 3rem;
+    }
 
     .content-container{
-        margin-top: 35%;
+        margin-top: 25%;
+        height: 700px;
+    }
+
+    .content-container img{
+        width: 30rem;
+        margin-top: 0;
+        margin-left: 0rem;
     }
 
     .line{
@@ -368,5 +389,12 @@ footer{
 
     footer span{
         font-size: 10px;
+    }
+} 
+
+@media screen and (max-width: 360px) {
+
+    .about-container{
+        margin-top: -7rem;
     }
 }
